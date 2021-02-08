@@ -1,0 +1,9 @@
+doctype html
+head
+  meta(charset='utf-8')
+  link(href='http://localhost:6789/css/styles.css' rel='stylesheet')
+  title Velib
+  h1 Liste des Stations Velib à Paris
+  img(src='http://localhost:6789/images/velib-paris.jpg' alt='Velib à Paris')
+  each velo in velib
+    li= velo.fields.name
